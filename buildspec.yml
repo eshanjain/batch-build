@@ -30,7 +30,7 @@ batch:
 
           MY_VAR: "value1"
 
-      buildspec: buildspec-1.yml
+      buildspec: buildspec1.yml
 
     - identifier: build-2
 
@@ -42,7 +42,7 @@ batch:
 
           MY_VAR: "value2"
 
-      buildspec: buildspec-2.yml
+      buildspec: buildspec2.yml
 
     - identifier: build-3
 
@@ -54,7 +54,7 @@ batch:
 
           MY_VAR: "value3"
 
-      buildspec: buildspec-3.yml
+      buildspec: buildspec3.yml
 
 
 reports:
