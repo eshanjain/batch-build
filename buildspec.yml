@@ -20,7 +20,7 @@ batch:
 
   build-list:
 
-    - identifier: build-1
+    - identifier: build1
 
       env:
 
@@ -32,7 +32,7 @@ batch:
 
       buildspec: buildspec1.yml
 
-    - identifier: build-2
+    - identifier: build2
 
       env:
 
@@ -44,7 +44,7 @@ batch:
 
       buildspec: buildspec2.yml
 
-    - identifier: build-3
+    - identifier: build3
 
       env:
 
