@@ -1,0 +1,70 @@
+version: 0.2
+
+
+env:
+
+  batch:
+
+    compute-type: BUILD_GENERAL1_SMALL
+
+    image: aws/codebuild/standard:5.0
+
+    timeout: 300
+
+    privileged-mode: true
+
+
+batch:
+
+  fast-fail: false
+
+  build-list:
+
+    - identifier: build-1
+
+      env:
+
+        compute-type: BUILD_GENERAL1_SMALL
+
+        variables:
+
+          MY_VAR: "value1"
+
+      buildspec: buildspec-1.yml
+
+    - identifier: build-2
+
+      env:
+
+        compute-type: BUILD_GENERAL1_MEDIUM
+
+        variables:
+
+          MY_VAR: "value2"
+
+      buildspec: buildspec-2.yml
+
+    - identifier: build-3
+
+      env:
+
+        compute-type: BUILD_GENERAL1_LARGE
+
+        variables:
+
+          MY_VAR: "value3"
+
+      buildspec: buildspec-3.yml
+
+
+reports:
+
+  report-group-code-coverage-report:
+
+    files:
+
+      - '**/*coverage*'
+
+    base-directory: 'tmp'
+
+    discard-paths: false
