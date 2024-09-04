@@ -29,6 +29,8 @@ batch:
         variables:
 
           MY_VAR: "value1"
+      
+      buildspec: buildspec2.yml
 
     - identifier: build2
 
