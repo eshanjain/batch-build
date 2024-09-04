@@ -30,8 +30,6 @@ batch:
 
           MY_VAR: "value1"
 
-      buildspec: buildspec1.yml
-
     - identifier: build2
 
       env:
