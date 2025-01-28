@@ -19,12 +19,12 @@ phases:
       - echo "Would deploy here"
 
 reports:
-  test-reports-1-wo-fo:
+  test-reports-2-wo-fo:
     files:
       - "**/*"
     base-directory: 'test-reports'
     file-format: JunitXml
-  code-cov-reports-1-wo-fo:
+  code-cov-reports-2-wo-fo:
     files:
       - "**/*"
     base-directory: 'coverage'
