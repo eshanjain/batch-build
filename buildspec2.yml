@@ -30,4 +30,4 @@ artifacts:
     - 'test-reports-wo-fo/**/*'
     - 'coverage-reports/**/*'
   name: build-reports-$(date +%Y-%m-%d)
-  s3-prefix: reports/
+  s3-prefix: reports-test-cov/
