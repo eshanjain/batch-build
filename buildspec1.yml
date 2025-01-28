@@ -27,7 +27,6 @@ reports:
 
 artifacts:
   files:
-    - 'test-reports-wo-fo/**/*'
-    - 'coverage-reports/**/*'
+    - 'test-reports/**/*'
   name: build-reports-$(date +%Y-%m-%d)
   s3-prefix: reports/
