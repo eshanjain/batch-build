@@ -28,6 +28,7 @@ reports:
     files:
       - "**/*"
     base-directory: 'coverage'
+    file-format: CLOVERXML
 
 artifacts:
   files:
