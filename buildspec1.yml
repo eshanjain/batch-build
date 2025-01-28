@@ -27,11 +27,11 @@ reports:
   code-cov-reports-1-wo-fo:
     files:
       - "**/*"
-    base-directory: 'coverage-reports'
+    base-directory: 'coverage'
 
 artifacts:
   files:
     - 'test-reports/**/*'
-    - 'coverage-reports/**/*'
+    - 'coverage/**/*'
   name: build-reports-$(date +%Y-%m-%d)
   s3-prefix: reports/
