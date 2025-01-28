@@ -19,15 +19,20 @@ phases:
       - echo "Would deploy here"
       
 reports:
-  test-reports-wo-fo:
+  test-reports-2-wo-fo:
     files:
       - "**/*"
-    base-directory: 'test-reports-wo-fo'
+    base-directory: 'test-reports'
     file-format: JunitXml
+  code-cov-reports-2-wo-fo:
+    files:
+      - "**/*"
+    base-directory: 'coverage'
+    file-format: CLOVERXML
 
 artifacts:
   files:
-    - 'test-reports-wo-fo/**/*'
-    - 'coverage-reports/**/*'
+    - 'test-reports/**/*'
+    - 'coverage/**/*'
   name: build-reports-$(date +%Y-%m-%d)
-  s3-prefix: reports/
+  s3-prefix: reports-test-cov/
