@@ -17,3 +17,17 @@ phases:
   post_build:
     commands:
       - echo "Would deploy here"
+
+reports:
+  test-reports-wo-fo:
+    files:
+      - "**/*"
+    base-directory: 'test-reports-wo-fo'
+    file-format: JunitXml
+
+artifacts:
+  files:
+    - 'test-reports-wo-fo/**/*'
+    - 'coverage-reports/**/*'
+  name: build-reports-$(date +%Y-%m-%d)
+  s3-prefix: reports/
