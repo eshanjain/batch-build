@@ -22,7 +22,7 @@ reports:
   test-reports-wo-fo:
     files:
       - "**/*"
-    base-directory: 'test-reports-wo-fo'
+    base-directory: 'test-reports'
     file-format: JunitXml
 
 artifacts:
