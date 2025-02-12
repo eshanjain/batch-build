@@ -18,17 +18,17 @@ phases:
     commands:
       - echo "Would deploy here"
       
-reports:
-  test-reports-2-wo-fo:
-    files:
-      - "**/*"
-    base-directory: 'test-reports'
-    file-format: JunitXml
-  code-cov-reports-2-wo-fo:
-    files:
-      - "**/*"
-    base-directory: 'coverage'
-    file-format: CLOVERXML
+# reports:
+#   test-reports-2-wo-fo:
+#     files:
+#       - "**/*"
+#     base-directory: 'test-reports'
+#     file-format: JunitXml
+#   code-cov-reports-2-wo-fo:
+#     files:
+#       - "**/*"
+#     base-directory: 'coverage'
+#     file-format: CLOVERXML
 
 artifacts:
   files:
